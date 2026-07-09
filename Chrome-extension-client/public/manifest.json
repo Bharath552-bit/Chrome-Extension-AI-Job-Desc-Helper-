@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "AI Text Helper",
+  "version": "1.0.0",
+  "description": "Select any job description to know your ats score.",
+  "action":{
+      "default_popup":"index.html",
+      "default_title":"AI Helper"
+  },
+  "permissions": ["activeTab","storage","scripting"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts":[
+    {
+      "matches":[
+        "<all_urls>"
+      ],
+      "js":[
+        "content.js"
+      ]
+    }
+  ]
+}
