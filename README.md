@@ -1,0 +1,1 @@
+# Chrome-Extension-AI-Job-Desc-Helper-
