@@ -56,7 +56,7 @@ async function sendTextToBackground(text){
     const storage = await chrome.storage.local.get(["resume"])
 
     if(!storage.resume){
-        alert("Upload Resume from content.js")
+        alert("Upload Resume")
         return
     }
     chrome.runtime.sendMessage(

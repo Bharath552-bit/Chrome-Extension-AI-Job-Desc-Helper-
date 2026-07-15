@@ -7,7 +7,7 @@ function App() {
     const file = e.target.files[0]
 
     if(!file){
-      alert("Upload Resume from app.jsx")
+      alert("Upload Resume")
       return
     }
 
